@@ -106,6 +106,7 @@
 		9BAC684A1F9EAFFF00F23665 /* blur_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BAC68451F9EAFFF00F23665 /* blur_2.png */; };
 		9BAC684B1F9EAFFF00F23665 /* blur_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BAC68461F9EAFFF00F23665 /* blur_1.png */; };
 		9BAC684C1F9EAFFF00F23665 /* blur_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BAC68471F9EAFFF00F23665 /* blur_5.png */; };
+		9BAC684E1F9EBC3D00F23665 /* PokerHands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC684D1F9EBC3D00F23665 /* PokerHands.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -210,6 +211,7 @@
 		9BAC68451F9EAFFF00F23665 /* blur_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blur_2.png; path = Pokerfolie/images/blurs/blur_2.png; sourceTree = SOURCE_ROOT; };
 		9BAC68461F9EAFFF00F23665 /* blur_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blur_1.png; path = Pokerfolie/images/blurs/blur_1.png; sourceTree = SOURCE_ROOT; };
 		9BAC68471F9EAFFF00F23665 /* blur_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blur_5.png; path = Pokerfolie/images/blurs/blur_5.png; sourceTree = SOURCE_ROOT; };
+		9BAC684D1F9EBC3D00F23665 /* PokerHands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerHands.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -242,6 +244,7 @@
 		9BAC67781F9EAA0400F23665 /* Pokerfolie */ = {
 			isa = PBXGroup;
 			children = (
+				9BAC684D1F9EBC3D00F23665 /* PokerHands.swift */,
 				9BAC678C1F9EAAAB00F23665 /* fonts */,
 				9BAC678B1F9EAA9600F23665 /* images */,
 				9BAC67791F9EAA0400F23665 /* AppDelegate.swift */,
@@ -562,6 +565,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BAC677C1F9EAA0400F23665 /* ViewController.swift in Sources */,
+				9BAC684E1F9EBC3D00F23665 /* PokerHands.swift in Sources */,
 				9BAC677A1F9EAA0400F23665 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
