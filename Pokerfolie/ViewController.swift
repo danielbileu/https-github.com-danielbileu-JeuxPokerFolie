@@ -202,18 +202,18 @@ class ViewController: UIViewController {
             }
         }
         
-//*********************************
+        //---
         if allSelected {
             displayRandomCards()
             return
         }
-//*********************************
+        //---
         for slotAnimation in arrOfSlotImageViews {
             if slotAnimation.layer.borderWidth != 1.0 {
                 slotAnimation.startAnimating()
             }
         }
-        //---Mettre le delay de 2.55 secondes. Aprés le delay,il va executer la Method "displayRandomCards"
+        //---Mettre le delay de 2.55 secondes. Aprés le delay,il va executer la Method "displayRandomCards".---
         Timer.scheduledTimer(timeInterval: 2.55,
                              target: self,
                              selector: #selector(displayRandomCards),
@@ -221,7 +221,7 @@ class ViewController: UIViewController {
                              repeats: false)
     }
     
-//----Pour créer 5 cartes aléatoires**********************************
+//----Pour faire afficher des cartes au hasard. A partir de 52 cartes, il affiche 5.---
     @objc func displayRandomCards() {
         //---
         theHand = returnRandomHand()
@@ -229,15 +229,16 @@ class ViewController: UIViewController {
         let arrOfCards = createCards(theHand: theHand)
         //---
         displayCards(arrOfCards: arrOfCards)
-        //---
+        
+        //---Permetre choisir des cartes affichées. ---
         permissionToSelectCards = true
         //---
         prepareForNextHand()
         //---
     }
-    //----------------------//----------------------
+    //---Pour preparer pour la prochaine main de cartes. ---
     func prepareForNextHand() {
-        //---
+        //---Donne une deuxième chance de distribuer las cartes si elles sont eguales à zéro.---
         if chances == 0 {
             permissionToSelectCards = false
             dealButton.alpha = 0.5
@@ -393,7 +394,7 @@ class ViewController: UIViewController {
         //---Pour faire la Mise et deduire de le crédit.
         let theBet = sender.tag
         
-        //---Pour faire les Mises et activer (.alpha = 1.0)  button "Distribuer"
+        //---Pour faire les Mises et activer (.alpha = 1.0)  button "Distribuer".
         if credits >= theBet {
             bet += theBet
             credits -= theBet
@@ -401,7 +402,7 @@ class ViewController: UIViewController {
             creditsLabel.text = "CRÉDITS : \(credits)"
             dealButton.alpha = 1.0
         }
-        //---
+        //---pour fair apparêtre le back de las images.
         resetBackOfCards()
         //---
     }
@@ -424,6 +425,15 @@ class ViewController: UIViewController {
         chances = 2
         //---
     }
-    //----------------------//----------------------
+    //---Le boputopn pour recommencer
+    @IBAction func restartLeGame(_ sender: UIButton) {
+        resetBackOfCards()
+        dealButton.alpha = 0.5
+        credits = 2000
+        creditsLabel.text = "CRÉDITS : \(credits)"
+        bet = 0
+        betLabel.text = "MISE : \(bet)"
+        tempLabel.text = "BONNE CHANCE..."
+    }
 }
 //----------------------//----------------------
