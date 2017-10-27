@@ -46,7 +46,7 @@ class ViewController: UIViewController {
     //---Un tableau avec les references pour les imageViews. ---
     var arrOfSlotImageViews: [UIImageView]!
     
-    //*--- Un tableau de Tuple: un mélange de types différentes de valeurs. Ici, le mélange d'un Integer et d'un String. Chaque Tuple va representer une carte avec deux données: le "Int" et le "String" (Entiéer et String - qui represent le chiffre et la sort de la carte, respectivement). C'est tableau ici, il ira avoir 52 cartes (pour le deck entiér). le tableau est vide au depart. */
+    /*--- Un tableau de Tuple: un mélange de types différentes de valeurs. Ici, le mélange d'un Integer et d'un String. Chaque Tuple va representer une carte avec deux données: le "Int" et le "String" (Entiéer et String - qui represent le chiffre et la sort de la carte, respectivement). C'est tableau ici, il ira avoir 52 cartes (pour le deck entiér). le tableau est vide au depart. */
     var deckOfCards = [(Int, String)]()
 
     //---Pour créer un tableau pour les Views. Celuici que va recevoir les cartes(Views). ---
@@ -335,7 +335,7 @@ class ViewController: UIViewController {
     func calculateHand(times: Int, handToDisplay: String) {
         credits += (times * bet)
         tempLabel.text = handToDisplay
-        creditsLabel.text = "CRÉDITS: \(credits)"
+        creditsLabel.text = "Crédits: \(credits)"
     }
     //---La Méthode pour les boutons. Si "chances" être égal ou moins que 1, il va arrêter  ----
     @IBAction func cardsToHold(_ sender: UIButton) {
@@ -355,9 +355,10 @@ class ViewController: UIViewController {
         //---Pour faire une "On" dans le jeux ---//
             arrOfSlotImageViews[sender.tag].layer.borderWidth = 1.0
             arrOfBackgrounds[sender.tag].layer.borderWidth = 0.5
-            arrOfBackgrounds[sender.tag].layer.borderColor = UIColor.blue.cgColor
-            arrOfBackgrounds[sender.tag].layer.backgroundColor = UIColor(red: 0.0,
-                                                                         green: 0.0, blue: 1.0, alpha: 0.5).cgColor
+            arrOfBackgrounds[sender.tag].layer.borderColor = UIColor(red: 255,
+                                                                     green: 102, blue: 51, alpha: 0.5).cgColor
+            arrOfBackgrounds[sender.tag].layer.backgroundColor = UIColor(red: 255,
+                                                                         green: 102, blue: 51, alpha: 0.5).cgColor
             arrOfKeepLabels[sender.tag].isHidden = false
             //---
             manageSelectedCards(theTag: sender.tag, shouldAdd: true)
@@ -430,10 +431,10 @@ class ViewController: UIViewController {
         resetBackOfCards()
         dealButton.alpha = 0.5
         credits = 2000
-        creditsLabel.text = "CRÉDITS : \(credits)"
+        creditsLabel.text = "Crédits: \(credits)"
         bet = 0
-        betLabel.text = "MISE : \(bet)"
-        tempLabel.text = "BONNE CHANCE..."
+        betLabel.text = "Mise: \(bet)"
+        tempLabel.text = "Bonne Chance!"
     }
 }
 //----------------------//----------------------
