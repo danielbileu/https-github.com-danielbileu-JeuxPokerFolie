@@ -64,25 +64,36 @@ class ViewController: UIViewController {
     //--- Une variable pour le Crédits. Il depart à 2000 de crédits. ---
     var credits = 2000
     
-    //--- Une variable que vai gerér quand les cartes peut our ne peut pas être choisis.
+    //--- Une variable que vai gerér quand les cartes peut our ne peut pas être choisis.---
     var chances = 2
-    
-    //---*************************
+
+    //---Pour appeller la class UserDefaultsManager.---
+    let callerForUserDefaultsManager = UserDefaultsManager()
+    //---Pour appeller la class PokerHands.---
     let pokerHands = PokerHands()
-    //---*************************
+    //---Un tableau vide pour être rempli.---
     var handToAnalyse = [(0, ""), (0, ""), (0, ""), (0, ""), (0, "")]
-    //---*************************
+    //---Un tableau de Tuple pour mettre la valeur en Hands
     var theHand = [(Int, String)]()
     
 //----Lorsque le Document, la inteface est prêt que est que tu va... ---
     override func viewDidLoad() {
     super.viewDidLoad()
         
+        //--- ...enregistrer le crédit...
+        if callerForUserDefaultsManager.doesKeyExist(theKey: "credits") == false {
+            callerForUserDefaultsManager.setKey(theValue: 2000 as AnyObject, theKey: "credits")
+        } else {
+            credits = callerForUserDefaultsManager.getvalue(theKey: "credits") as! Int
+            creditsLabel.text = "Crédits: \(credits)"
+        }
+        
+        
         //--- ...executer la Méthode "createCardObjectsFromImages". Créer la animation des images floué. ---
         createCardObjectsFromImages()
         
         //---
-        fillUpArrays() //--- ...remplir les Arrays(tableaux): "arrOfCardImages", "arrOfSlotImageViews" , "arrOfBackgrounds", "arrOfKeepLabels" avec les references de chaque. --- image. ---
+        fillUpArrays() //--- ...remplir les Arrays(tableaux): "arrOfCardImages", "arrOfSlotImageViews" , "arrOfBackgrounds", "arrOfKeepLabels" avec les references de chaque image. ---
 
         //--- ...contrôler les animations dans le tableau "arrOfCardImages" (elle est limitée pour la Methode "Timer.scheduledTimer" que va donner un delay pour montrer le resultats aprées l'animation et combien de fois qu'elle va repeter). Il va prende 0.5 secondes la animation des images (dans "arrOfCardImages"). ---
         prepareAnimations(duration: 0.5,
@@ -105,7 +116,7 @@ class ViewController: UIViewController {
         createDeckOfCards()
     }
     
-//----Des Méthodes ---------------------------------
+//----La Méthodes ---------------------------------
     //--- Cette Fonction a de boucle pour remplir les 52 cards du tableau "deckOfCards". ---
     func createDeckOfCards() {
         deckOfCards = [(Int, String)]()
@@ -121,7 +132,7 @@ class ViewController: UIViewController {
     func stylizeSlotImageViews(radius r: CGFloat,
                                borderWidth w: CGFloat,
                                borderColor c: CGColor,
-                               bgColor g: CGColor!) {
+                               bgColor g: CGColor!) { 
         for slotImageView in arrOfSlotImageViews {
             slotImageView.clipsToBounds = true
             slotImageView.layer.cornerRadius = r
@@ -131,7 +142,7 @@ class ViewController: UIViewController {
         }
     }
     
-    //----------------------//----------------------
+    //----------------------------------------------
     func stylizeBackgroundViews(radius r: CGFloat,
                                 borderWidth w: CGFloat?,
                                 borderColor c: CGColor,
@@ -158,7 +169,7 @@ class ViewController: UIViewController {
         card_blur_2 = UIImage(named: "blur_2.png")
         card_blur_3 = UIImage(named: "blur_3.png")
         card_blur_4 = UIImage(named: "blur_4.png")
-        card_blur_5 = UIImage(named: "blur_4.png")
+        card_blur_5 = UIImage(named: "blur_5.png")
     }
     //---Prepares les paramétres des animations. La duration est nùmero double(d), ls repetition est definée pour un nùmero Integer(r) et les cards sont definis comme les images floués en le Méthod "returnRandomBlurCards" le paramétre "arrBlurCards"(c)--- 
     func prepareAnimations(duration d: Double,
@@ -236,6 +247,7 @@ class ViewController: UIViewController {
         prepareForNextHand()
         //---
     }
+    
     //---Pour preparer pour la prochaine main de cartes. ---
     func prepareForNextHand() {
         //---Donne une deuxième chance de distribuer las cartes si elles sont eguales à zéro.---
@@ -248,6 +260,13 @@ class ViewController: UIViewController {
             chances = 2
             bet = 0
             betLabel.text = "MISE : 0"
+        }
+        
+        //---Enregistrer le crédit si il est different de zéro. Si il est zéro, il enregistre.
+        if credits != 0 {
+            callerForUserDefaultsManager.setKey(theValue: credits as AnyObject, theKey: "credits")
+        }else {
+            callerForUserDefaultsManager.removeKey(theKey: "credits")
         }
         //---
     }
