@@ -107,6 +107,12 @@
 		9BAC684B1F9EAFFF00F23665 /* blur_1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BAC68461F9EAFFF00F23665 /* blur_1.png */; };
 		9BAC684C1F9EAFFF00F23665 /* blur_5.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BAC68471F9EAFFF00F23665 /* blur_5.png */; };
 		9BAC684E1F9EBC3D00F23665 /* PokerHands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC684D1F9EBC3D00F23665 /* PokerHands.swift */; };
+		9BCD20A31FA2B0C70067302B /* button_Recommencer.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BCD20A21FA2B0C60067302B /* button_Recommencer.png */; };
+		9BCD20A51FA2BCCA0067302B /* LaunchScreen_PokerFolie.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BCD20A41FA2BCCA0067302B /* LaunchScreen_PokerFolie.png */; };
+		9BCD20A71FA2CADB0067302B /* button_Distribuer.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BCD20A61FA2CADB0067302B /* button_Distribuer.png */; };
+		9BCD20AB1FA2CAE70067302B /* button_Miser25.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BCD20A81FA2CAE30067302B /* button_Miser25.png */; };
+		9BCD20AC1FA2CAE70067302B /* button_Miser100.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BCD20A91FA2CAE40067302B /* button_Miser100.png */; };
+		9BCD20AD1FA2CAE70067302B /* button_MiserTout.png in Resources */ = {isa = PBXBuildFile; fileRef = 9BCD20AA1FA2CAE60067302B /* button_MiserTout.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -212,6 +218,12 @@
 		9BAC68461F9EAFFF00F23665 /* blur_1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blur_1.png; path = Pokerfolie/images/blurs/blur_1.png; sourceTree = SOURCE_ROOT; };
 		9BAC68471F9EAFFF00F23665 /* blur_5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blur_5.png; path = Pokerfolie/images/blurs/blur_5.png; sourceTree = SOURCE_ROOT; };
 		9BAC684D1F9EBC3D00F23665 /* PokerHands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokerHands.swift; sourceTree = "<group>"; };
+		9BCD20A21FA2B0C60067302B /* button_Recommencer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_Recommencer.png; sourceTree = "<group>"; };
+		9BCD20A41FA2BCCA0067302B /* LaunchScreen_PokerFolie.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchScreen_PokerFolie.png; sourceTree = "<group>"; };
+		9BCD20A61FA2CADB0067302B /* button_Distribuer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_Distribuer.png; sourceTree = "<group>"; };
+		9BCD20A81FA2CAE30067302B /* button_Miser25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_Miser25.png; sourceTree = "<group>"; };
+		9BCD20A91FA2CAE40067302B /* button_Miser100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_Miser100.png; sourceTree = "<group>"; };
+		9BCD20AA1FA2CAE60067302B /* button_MiserTout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button_MiserTout.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,13 +298,18 @@
 				9BAC68431F9EAFFF00F23665 /* blur_4.png */,
 				9BAC68471F9EAFFF00F23665 /* blur_5.png */,
 			);
-			name = blurs;
-			path = "New Group";
+			path = blurs;
 			sourceTree = "<group>";
 		};
 		9BAC67921F9EAD5400F23665 /* misc */ = {
 			isa = PBXGroup;
 			children = (
+				9BCD20A81FA2CAE30067302B /* button_Miser25.png */,
+				9BCD20A91FA2CAE40067302B /* button_Miser100.png */,
+				9BCD20AA1FA2CAE60067302B /* button_MiserTout.png */,
+				9BCD20A61FA2CADB0067302B /* button_Distribuer.png */,
+				9BCD20A41FA2BCCA0067302B /* LaunchScreen_PokerFolie.png */,
+				9BCD20A21FA2B0C60067302B /* button_Recommencer.png */,
 				9BAC683B1F9EAFEF00F23665 /* bg.png */,
 				9BAC683D1F9EAFEF00F23665 /* buttons.png */,
 				9BAC683C1F9EAFEF00F23665 /* delete.png */,
@@ -368,15 +385,15 @@
 				9BAC67A81F9EAFDD00F23665 /* Icon-20.png */,
 				9BAC67AE1F9EAFDD00F23665 /* Icon-29.png */,
 				9BAC67A01F9EAFDC00F23665 /* Icon-32.png */,
-				9BAC679D1F9EAFDC00F23665 /* Icon-40.png */,
 				9BAC67AA1F9EAFDD00F23665 /* Icon-48.png */,
 				9BAC67971F9EAFDC00F23665 /* Icon-50.png */,
 				9BAC67A11F9EAFDC00F23665 /* Icon-55.png */,
 				9BAC67A31F9EAFDD00F23665 /* Icon-57.png */,
 				9BAC679F1F9EAFDC00F23665 /* Icon-58.png */,
-				9BAC67A91F9EAFDD00F23665 /* Icon-60.png */,
 				9BAC679B1F9EAFDC00F23665 /* Icon-64.png */,
+				9BAC679D1F9EAFDC00F23665 /* Icon-40.png */,
 				9BAC679E1F9EAFDC00F23665 /* Icon-72.png */,
+				9BAC67A91F9EAFDD00F23665 /* Icon-60.png */,
 				9BAC67951F9EAFDC00F23665 /* Icon-76.png */,
 				9BAC67B11F9EAFDE00F23665 /* Icon-80.png */,
 				9BAC67AD1F9EAFDD00F23665 /* Icon-87.png */,
@@ -473,6 +490,7 @@
 				9BAC68241F9EAFEA00F23665 /* 5d.png in Resources */,
 				9BAC67CC1F9EAFDE00F23665 /* Icon-29.png in Resources */,
 				9BAC67D01F9EAFDE00F23665 /* Icon-88.png in Resources */,
+				9BCD20AB1FA2CAE70067302B /* button_Miser25.png in Resources */,
 				9BAC680A1F9EAFE900F23665 /* 4h.png in Resources */,
 				9BAC683A1F9EAFEA00F23665 /* 12d.png in Resources */,
 				9BAC67BE1F9EAFDE00F23665 /* Icon-32.png in Resources */,
@@ -480,6 +498,7 @@
 				9BAC68181F9EAFEA00F23665 /* 10s.png in Resources */,
 				9BAC67B51F9EAFDE00F23665 /* Icon-50.png in Resources */,
 				9BAC68481F9EAFFF00F23665 /* blur_4.png in Resources */,
+				9BCD20AC1FA2CAE70067302B /* button_Miser100.png in Resources */,
 				9BAC68371F9EAFEA00F23665 /* 6d.png in Resources */,
 				9BAC67B91F9EAFDE00F23665 /* Icon-64.png in Resources */,
 				9BAC68421F9EAFEF00F23665 /* logo.png in Resources */,
@@ -493,6 +512,8 @@
 				9BAC681C1F9EAFEA00F23665 /* 9h.png in Resources */,
 				9BAC684B1F9EAFFF00F23665 /* blur_1.png in Resources */,
 				9BAC68311F9EAFEA00F23665 /* 7c.png in Resources */,
+				9BCD20AD1FA2CAE70067302B /* button_MiserTout.png in Resources */,
+				9BCD20A51FA2BCCA0067302B /* LaunchScreen_PokerFolie.png in Resources */,
 				9BAC67841F9EAA0400F23665 /* LaunchScreen.storyboard in Resources */,
 				9BAC68271F9EAFEA00F23665 /* 4c.png in Resources */,
 				9BAC68191F9EAFEA00F23665 /* 11c.png in Resources */,
@@ -535,6 +556,7 @@
 				9BAC68151F9EAFEA00F23665 /* 1c.png in Resources */,
 				9BAC681F1F9EAFEA00F23665 /* 12s.png in Resources */,
 				9BAC68291F9EAFEA00F23665 /* 10c.png in Resources */,
+				9BCD20A31FA2B0C70067302B /* button_Recommencer.png in Resources */,
 				9BAC67C71F9EAFDE00F23665 /* Icon-60.png in Resources */,
 				9BAC68411F9EAFEF00F23665 /* buttons.png in Resources */,
 				9BAC684A1F9EAFFF00F23665 /* blur_2.png in Resources */,
@@ -547,6 +569,7 @@
 				9BAC677F1F9EAA0400F23665 /* Main.storyboard in Resources */,
 				9BAC67B61F9EAFDE00F23665 /* Icon-114.png in Resources */,
 				9BAC67C21F9EAFDE00F23665 /* Icon-100.png in Resources */,
+				9BCD20A71FA2CADB0067302B /* button_Distribuer.png in Resources */,
 				9BAC67B31F9EAFDE00F23665 /* Icon-76.png in Resources */,
 				9BAC68391F9EAFEA00F23665 /* 13h.png in Resources */,
 				9BAC68061F9EAFE900F23665 /* 1d.png in Resources */,

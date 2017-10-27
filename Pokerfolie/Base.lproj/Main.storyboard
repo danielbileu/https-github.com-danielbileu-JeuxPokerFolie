@@ -13,6 +13,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+        <array key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-Light</string>
+        </array>
         <array key="couture-bld.otf">
             <string>Couture-Bold</string>
         </array>
@@ -46,12 +52,12 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="5Lx-DR-nJd"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="AL6-dx-Y5z" firstAttribute="top" secondItem="K08-XR-VI4" secondAttribute="bottom" constant="5" id="8fO-LX-Pud"/>
                                     <constraint firstItem="K08-XR-VI4" firstAttribute="centerX" secondItem="QsA-Vm-JS7" secondAttribute="centerX" id="9Ug-lc-yxB"/>
@@ -83,12 +89,12 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="0YF-Bo-AKf"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.61821395499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="hYR-ak-475" firstAttribute="top" secondItem="FHb-SX-bno" secondAttribute="top" constant="3" id="6Kb-zb-3eR"/>
                                     <constraint firstItem="hYR-ak-475" firstAttribute="leading" secondItem="FHb-SX-bno" secondAttribute="leading" constant="3" id="AJ1-wd-2T4"/>
@@ -107,23 +113,23 @@
                                 <rect key="frame" x="273" y="106" width="121" height="196"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="m2U-QP-eJ8">
-                                        <rect key="frame" x="3" y="3" width="115" height="166"/>
+                                        <rect key="frame" x="3" y="3" width="115" height="161.5"/>
                                     </imageView>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhK-ms-xLq">
-                                        <rect key="frame" x="3" y="3" width="115" height="166"/>
+                                        <rect key="frame" x="3" y="3" width="115" height="161.5"/>
                                         <connections>
                                             <action selector="cardsToHold:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zOv-tg-vIH"/>
                                         </connections>
                                     </button>
                                     <label hidden="YES" opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Garder" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEJ-8g-v2z">
-                                        <rect key="frame" x="3" y="174" width="115" height="17"/>
-                                        <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="17"/>
+                                        <rect key="frame" x="3" y="169.5" width="115" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                         <size key="shadowOffset" width="0.0" height="0.0"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.45061246589999998" blue="0.18878426770000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="jhK-ms-xLq" secondAttribute="trailing" constant="3" id="3y0-v5-quQ"/>
                                     <constraint firstItem="KEJ-8g-v2z" firstAttribute="top" secondItem="m2U-QP-eJ8" secondAttribute="bottom" constant="5" id="BPF-zd-rNH"/>
@@ -157,7 +163,7 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="W1R-k7-zbN"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -194,12 +200,12 @@
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="UYU-BR-UN0"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="TtR-A6-i2g" firstAttribute="trailing" secondItem="CV3-L5-YrJ" secondAttribute="trailing" id="9lI-QJ-Da9"/>
                                     <constraint firstItem="CV3-L5-YrJ" firstAttribute="top" secondItem="TtR-A6-i2g" secondAttribute="top" id="A7h-vN-yYx"/>
@@ -214,22 +220,24 @@
                                     <constraint firstAttribute="bottom" secondItem="Vx2-Yr-QQZ" secondAttribute="bottom" constant="6" id="zWg-Yh-9Kr"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CRÉDITS: 2000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGt-VV-yZd">
-                                <rect key="frame" x="523" y="11" width="124" height="17"/>
-                                <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="17"/>
-                                <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crédits: 2000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGt-VV-yZd">
+                                <rect key="frame" x="547" y="11" width="100" height="20.5"/>
+                                <color key="backgroundColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="0.85397046232876717" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.61821395499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MISE: 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kt-fq-Zzf">
-                                <rect key="frame" x="584" y="36" width="63" height="17"/>
-                                <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="17"/>
-                                <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mise: 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7kt-fq-Zzf">
+                                <rect key="frame" x="593.5" y="39.5" width="53.5" height="20.5"/>
+                                <color key="backgroundColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="0.85423801369863017" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.61821395499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVM-mh-omb">
                                 <rect key="frame" x="15" y="314" width="121" height="47"/>
                                 <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="12"/>
-                                <state key="normal" title="RECOMMENCER" backgroundImage="buttons.png">
+                                <state key="normal" backgroundImage="button_Recommencer.png">
                                     <color key="titleColor" red="1" green="0.0" blue="0.61821395499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -239,7 +247,7 @@
                             <button opaque="NO" tag="25" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A58-j4-2Ng">
                                 <rect key="frame" x="144" y="314" width="121" height="47"/>
                                 <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="12"/>
-                                <state key="normal" title="MISER 25" backgroundImage="buttons.png">
+                                <state key="normal" backgroundImage="button_Miser25.png">
                                     <color key="titleColor" red="1" green="0.0" blue="0.61821395499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -252,7 +260,7 @@
                                     <constraint firstAttribute="width" secondItem="xZ0-tG-fkG" secondAttribute="height" multiplier="121:47" id="WYI-9a-Xbk"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="12"/>
-                                <state key="normal" title="MISER 100" backgroundImage="buttons.png">
+                                <state key="normal" backgroundImage="button_Miser100.png">
                                     <color key="titleColor" red="1" green="0.0" blue="0.61821395499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -262,7 +270,7 @@
                             <button opaque="NO" tag="1000" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fsx-nh-YjR">
                                 <rect key="frame" x="402" y="314" width="121" height="47"/>
                                 <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="12"/>
-                                <state key="normal" title="MISER TOUT" backgroundImage="buttons.png">
+                                <state key="normal" backgroundImage="button_MiserTout.png">
                                     <color key="titleColor" red="1" green="0.0" blue="0.61821395499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -272,17 +280,18 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqa-51-ndb">
                                 <rect key="frame" x="531" y="314" width="121" height="47"/>
                                 <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="12"/>
-                                <state key="normal" title="DISTRIBUER" backgroundImage="buttons.png">
+                                <state key="normal" backgroundImage="button_Distribuer.png">
                                     <color key="titleColor" red="1" green="0.0" blue="0.61821395499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M0Z-cN-9Ps"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text=" bonne chance!" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRM-cT-PNo">
-                                <rect key="frame" x="494" y="61" width="153" height="27"/>
-                                <fontDescription key="fontDescription" name="Couture-Bold" family="Couture" pointSize="17"/>
-                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Bonne chance!   " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRM-cT-PNo">
+                                <rect key="frame" x="494" y="68" width="153" height="20"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.85566986239999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rdu-Os-xEP">
@@ -388,8 +397,12 @@
     </scenes>
     <resources>
         <image name="back.png" width="373" height="521"/>
-        <image name="bg.png" width="2208" height="1242"/>
-        <image name="buttons.png" width="756" height="299"/>
-        <image name="logo.png" width="1000" height="299"/>
+        <image name="bg.png" width="3957" height="2265"/>
+        <image name="button_Distribuer.png" width="756" height="299"/>
+        <image name="button_Miser100.png" width="756" height="299"/>
+        <image name="button_Miser25.png" width="756" height="299"/>
+        <image name="button_MiserTout.png" width="756" height="299"/>
+        <image name="button_Recommencer.png" width="756" height="299"/>
+        <image name="logo.png" width="1368" height="382"/>
     </resources>
 </document>
