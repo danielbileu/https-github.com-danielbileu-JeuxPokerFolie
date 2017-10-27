@@ -432,7 +432,6 @@ class ViewController: UIViewController {
             back.image = UIImage(named: "back.png")
         }
     }
-    
     func resetCards() {
         /*---Une boucle entre zéro et quatre avec toutes les imageViews. Toutes les elements dans le tableaux ("arrOfSlotImageViews", "arrOfBackgrounds", "arrOfBackgrounds", "arrOfKeepLabels") ont recevoir le changement. ---*/
         for index in 0...4 {
