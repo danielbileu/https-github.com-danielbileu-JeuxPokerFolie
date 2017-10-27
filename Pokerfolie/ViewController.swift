@@ -374,10 +374,10 @@ class ViewController: UIViewController {
         //---Pour faire une "On" dans le jeux ---//
             arrOfSlotImageViews[sender.tag].layer.borderWidth = 1.0
             arrOfBackgrounds[sender.tag].layer.borderWidth = 0.5
-            arrOfBackgrounds[sender.tag].layer.borderColor = UIColor(red: 255,
-                                                                     green: 102, blue: 51, alpha: 0.5).cgColor
-            arrOfBackgrounds[sender.tag].layer.backgroundColor = UIColor(red: 255,
-                                                                         green: 102, blue: 51, alpha: 0.5).cgColor
+            arrOfBackgrounds[sender.tag].layer.borderColor = UIColor(red: 255/255,
+                                                                     green: 102/255, blue: 51/255, alpha: 0.5).cgColor
+            arrOfBackgrounds[sender.tag].layer.backgroundColor = UIColor(red: 255/255,
+                                                                         green: 102/255, blue: 51/255, alpha: 0.5).cgColor
             arrOfKeepLabels[sender.tag].isHidden = false
             //---
             manageSelectedCards(theTag: sender.tag, shouldAdd: true)
